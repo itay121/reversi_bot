@@ -1,6 +1,6 @@
 # reversi_bot
 
-This is an AI bot developed for a Reversi competition. The bot achieved **first place** with a record of **14 wins, 0 draws, and 0 losses**.
+This is an AI bot developed for a Reversi group competition. The bot won the first place with a record of **14 wins, 0 draws, and 0 losses**.
 
 ---
 
@@ -32,7 +32,7 @@ This is an AI bot developed for a Reversi competition. The bot achieved **first 
   - **Density**: Evaluates local control using a "density mask" that considers neighboring pieces.
   - **Endgame Considerations**: Adds weight to moves during the late game (55+ pieces on the board).
   - **Mobility**: Rewards players with more available moves.
-  - **Sandwich Heuristic** (incomplete): Checks for sequences of opponent pieces enclosed by the player’s pieces.
+  - **Sandwich Heuristic**: Checks for sequences of opponent pieces enclosed by the player’s pieces.
 
 ---
 
@@ -66,5 +66,5 @@ This is an AI bot developed for a Reversi competition. The bot achieved **first 
 ### Game-Specific Heuristics
 - **Density**:
   - Combines board state and neighbor information for positional evaluation.
-- **Sandwich Detection** (partially implemented):
+- **Sandwich Detection**:
   - Will add scoring for capturing enclosed lines of pieces.
