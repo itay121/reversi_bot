@@ -48,7 +48,7 @@ def transform_reversi_board(board):
     
     for i in range(64):
         if (places >> i) & 1:  # Check if there's a piece at position i
-            board[i // 8][i % 8] = 1 if (colors >> i) & 1 else 2  # Black = 1, White = 2
+            board[i // 8][i % 8] = 2 if (colors >> i) & 1 else 1  # Black = 1, White = 2
     
     return board
 
